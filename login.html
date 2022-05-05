@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Birthday Info and Time Management</title>
+    <link rel="stylesheet" href="/stylesheets/loginstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+                <img style="width:100px;" src="/images/clock.png" alt="Image Of Clock">
+            </div>
+
+            <div class="col">
+                <h2>Birthday Info and Time-Management Login!</h2>
+                <h6>
+                    We build this website to tell you about your <strong>time since your day of birth</strong>
+                    and <strong>how you spend your time.</strong> AKA time-management.
+                </h6>
+                <br>
+            </div>
+
+            <div class="col" id="birthdayImage">
+                <img style="width:100px;" src="/images/birthdayCake.jpg" alt="Birthday">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <h6 id="quotes">
+                    “When you are deciding on next steps, next jobs, 
+                    next careers, further education, you should rather 
+                    find purpose than a job or a career.  
+                    Purpose crosses disciplines. Purpose is an essential element of you. 
+                    It is the reason you are on the planet at this particular time in history.” - Chadwick Boseman<br><br><br>
+                </h6>
+
+                <div>
+                    <h6 id="quotes">
+                        “You get to decide where your time goes. You can either spend it moving forward, 
+                        or you can spend it putting out fires. You decide. 
+                        And if you don't decide, others will decide for you.” - Tony Morgan
+                    </h6>
+                </div>
+
+                <!--<video id="firstVideoLeft" width="300" height="300" autoplay loop muted>
+                    <source src="/videos/bicepWorkout.mp4" type="video/mp4">
+                </video>-->
+
+            </div>
+            <div class="col">
+                <form class="form-signin" method="post" action="login">
+
+                    <div id="message"></div>
+
+                    <div>
+                        <label for="searchId" id="searchId"> Search:</label>
+                        <input type="search" id="searchId" placeholder="find your friend" size="30"><br> <br>
+                        <label for="usernamelogin">Username:</label>
+                        <input type="text" name="username" placeholder="enter your username" required autofocus><br><br>
+                        <label for="paswordId"> Password:</label>
+                        <!-- <input type="password" id="passwordId" placeholder="123xzyd" pattern="[0-9]{3}[A-Za-z]{4}" required><br><br> -->
+                        <input type="password" name="password" placeholder="enter your password" required><br><br>
+
+                        <!-- ForgePassword-->
+
+                        <div>
+                            
+                            <a href="forgetPassword">Forget my password</a><br><br>
+                        </div>
+                        <button style="padding: 5px 40px;" class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+
+                        <div>
+
+                            Create a new account ! <a href="signup">Sign Up</a>
+                        </div>
+                    </div>
+
+                </form>
+
+
+            </div>
+            <div class="col">
+
+                <h6 id="quotes">
+                    "Don't be fooled by the calendar. There are only as many days in the year as you make use of. 
+                    One man gets only a week's value out of a year while another man gets a full year's value out of a week."<br> 
+                    - Charles Richards<br><br><br>
+                </h6>
+
+                <div>
+                    <h6 id="quotes">
+                        "One reason so few of us achieve what we truly want is that we never direct our focus; 
+                        we never concentrate our power. Most people dabble their way through life, 
+                        never deciding to master anything in particular."<br> - Tony Robbins
+                    </h6>
+                </div>
+
+                <!--<video id="secondVideoRight" width="300" height="300" autoplay loop muted>
+                    <source src="/videos/nature.mp4" type="video/mp4">
+                </video>-->
+
+            </div>
+        </div>
+
+        <!--<div class="row">
+            <div class="col">
+                <h6>
+                    “When you are deciding on next steps, next jobs, 
+                    next careers, further education, you should rather 
+                    find purpose than a job or a career.  
+                    Purpose crosses disciplines. Purpose is an essential element of you. 
+                    It is the reason you are on the planet at this particular time in history.” - Chadwick Boseman
+                </h6>
+
+            </div>  
+        </div>-->
+
+        <div class="row" style="background-color:black;">
+
+            <div class="col">
+
+                <video id="hugVideo" width="225" height="300" autoplay loop muted>
+                    <source src="/videos/hug.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="col">
+
+                <video id="readingVideo" width="225" height="300" autoplay loop muted>
+                    <source src="/videos/reading.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="col">
+                <video id="paintingVideo" width="225" height="300" autoplay loop muted>
+                    <source src="/videos/painting.mp4" type="video/mp4">
+                </video>               
+            </div>
+
+            <div class="col">
+                <video id="bicepVideo" width="225" height="300" autoplay loop muted>
+                    <source src="/videos/bicepWorkout.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="/javascripts/login.js" type="text/babel"></script>
+</body>
+
+</html>
